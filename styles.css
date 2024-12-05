@@ -1,0 +1,228 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #141414;
+  color: white;
+  line-height: 1.5;
+}
+
+.main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #141414;
+  position: fixed;
+  width: 98%;
+  top: 0;
+  z-index: 10;
+  margin: auto;
+}
+
+nav img {
+  height: 50px;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+select.btn, .btn {
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #e5e5e5;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 150px 20px;
+  background: linear-gradient(65deg, black, transparent),
+      url('https://dkr0pu7ej5xex.cloudfront.net/wp-content/uploads/2017/04/24135159/Netflix-Background.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  min-height: 80vh; /* Makes the hero section take the full height of the viewport */
+}
+
+
+.hero span {
+  margin: 10px 0;
+  font-size: 1.6rem;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.hero-buttons input {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.hero-buttons .red-btn {
+  background-color: red;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-buttons .red-btn:hover {
+  background-color: #e50914;
+}
+
+/* Sections */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #141414;
+}
+
+section span:first-child {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+section span:last-child {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.sec-img img, .sec-img video {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Separation Line */
+.separation {
+  height: 8px;
+  background-color: #222;
+}
+
+/* FAQ Section */
+.faq {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #141414;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.faq-box {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-box li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.faq-box li svg {
+  stroke: white;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #141414;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+footer .footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+footer .footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .footer-item a {
+  color: #777;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+footer .footer-item a:hover {
+  color: white;
+}
+
+footer .final {
+  margin-top: 20px;
+}
+
+footer select {
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+footer span {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #555;
+}
